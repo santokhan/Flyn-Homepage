@@ -1,0 +1,156 @@
+footer {
+    position: relative;
+    overflow: hidden;
+    background: #121A1D;
+}
+
+footer .different-footer h6 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(51, 51, 51);
+}
+
+.btn-scroll-top {
+    z-index: 50;
+    position: fixed;
+    bottom: 30px;
+    right: 16px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 1.25rem;
+    background: white;
+}
+
+.btn-scroll-top>i {
+    animation: scrollup 2s infinite;
+    margin-top: 0.625rem;
+}
+
+@keyframes scrollup {
+    40% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+    }
+
+    50% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+    }
+}
+
+.btn-scroll-top:hover {
+    background: rgb(224, 224, 224);
+}
+
+.btn-scroll-top:hover i {
+    animation: none;
+    margin-top: 0;
+}
+
+/* Footer Bottom */
+
+.footer-bottom {
+    position: relative;
+    overflow-x: hidden;
+    background: url("/image/footer.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+footer h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+footer h6 {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+.absolute-footer {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+footer .circle-1 {
+    position: absolute;
+    left: 30vw;
+    top: -30px;
+}
+
+footer .circle-2 {
+    position: absolute;
+    left: 24vw;
+    top: -200px;
+}
+
+footer .button-purchase-now-1 {
+    height: 50px;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 0px 30px;
+    line-height: 50px;
+    border-radius: 0px;
+    text-align: center;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    margin: -7px 0px;
+    border: 1px solid #ffffff;
+    z-index: 20;
+    background: transparent;
+}
+
+footer .button-purchase-now-1:hover {
+    background: white;
+    color: black;
+    margin: -7px 0px;
+    border: 1px solid #ffffff;
+}
+
+@media (min-width:1200px) {
+    .absolute-footer>.circle-1 {
+        position: absolute;
+        left: 50vw;
+        top: -50px;
+    }
+
+    .absolute-footer>.circle-2 {
+        position: absolute;
+        left: 51vw;
+        top: -350px;
+    }
+
+    footer h1 {
+        font-size: 3.125rem;
+        font-weight: 600;
+    }
+
+    footer h6 {
+        font-size: 1.125rem;
+        line-height: 1.4;
+        font-weight: 500;
+    }
+
+    footer .circle-1 {
+        position: absolute;
+        left: 27vw;
+        top: -30px;
+    }
+
+    footer .circle-2 {
+        position: absolute;
+        left: 28vw;
+        top: -150px;
+    }
+}

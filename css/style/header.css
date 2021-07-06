@@ -1,0 +1,492 @@
+header {
+    position: relative;
+    background-image: linear-gradient(90deg, #5B3DFF 17.5%, #D07FCF 100%);
+    width: 100%;
+    height: 65vh;
+    overflow: hidden;
+}
+
+header .bg-header {
+    background: url("/image/header-background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+header .logo {
+    width: calc(70px + 2vw) !important;
+}
+
+header .header-title {
+    color: #ffffff;
+    font-size: calc(11px + 2.29vw);
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    line-height: 1.3;
+    margin-bottom: 60px;
+    z-index: 100;
+}
+
+header .button-purchase-now-1 {
+    height: 50px;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 0px 30px;
+    line-height: 50px;
+    border-radius: 0px;
+    text-align: center;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    margin: -7px 0px;
+    border: 1px solid #ffffff;
+    z-index: 20;
+    background: transparent;
+}
+
+header .button-purchase-now-1:hover {
+    background: white;
+    color: black;
+    margin: -7px 0px;
+    border: 1px solid #ffffff;
+}
+
+header h3 {
+    color: white;
+    font-weight: 500;
+    font-size: calc(11px + 1vw);
+    margin-bottom: 10px;
+}
+
+header p {
+    opacity: .5;
+    color: #ffffff;
+    font-size: calc(6px + 0.7vw);
+    font-weight: 500;
+    margin-bottom: 0px;
+    margin-top: 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+header .i-plus {
+    margin-left: 0.25rem;
+    font-size: 75%;
+}
+
+.z-index-20 {
+    z-index: 20;
+}
+
+
+
+
+/* Scroll Down*/
+header .btn-scroll-down {
+    position: relative;
+    max-width: 20px;
+    max-height: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 1.25rem 1.125rem;
+    border-radius: 20px 20px;
+}
+
+header .arrow-down {
+    position: absolute;
+    left: 48%;
+    top: 50%;
+    /* transform: translateX(-50%) translateY(-50%); */
+    border-radius: 2px;
+    width: 2px;
+    height: 16px;
+    background: white;
+    animation: scroll-btn-animate 3s infinite ease-out;
+    -moz-animation: scroll-btn-animate 3s infinite ease-out;
+    -webkit-animation: scroll-btn-animate 3s infinite ease-out;
+}
+
+.arrow-down::before {
+    content: "";
+    position: absolute;
+    left: 2px;
+    bottom: 0;
+    transform: translateX(10%) rotate(45deg);
+    border-radius: 2px;
+    width: 2px;
+    height: 6px;
+    background: white;
+}
+
+.arrow-down::after {
+    content: "";
+    position: absolute;
+    left: -3px;
+    bottom: 0;
+    transform: translateX(40%) rotate(-45deg);
+    border-radius: 2px;
+    width: 2px;
+    height: 6px;
+    background: white;
+}
+
+@keyframes scroll-btn-animate {
+    0% {
+        transform: translateY(0);
+    }
+
+    30% {
+        transform: translateY(4px);
+    }
+
+    50% {
+        transform: translateY(-18px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.btn-scroll-down:hover {
+    -webkit-transition: background-color 0.25s cubic-bezier(0, .64, 1, .28);
+    -moz-transition: background-color 0.25s cubic-bezier(0, .64, 1, .28);
+    transition: background-color 0.25s cubic-bezier(0, .64, 1, .28);
+    background-color: white;
+}
+
+.btn-scroll-down:hover .arrow-down {
+    -webkit-transition: background-color 0.25s cubic-bezier(0, .64, 1, .28);
+    -moz-transition: background-color 0.25s cubic-bezier(0, .64, 1, .28);
+    transition: background-color 0.25s cubic-bezier(0, .64, 1, .28);
+    background-color: black;
+}
+
+.btn-scroll-down:hover .arrow-down::before {
+    -webkit-transition: background-color 0.25s ease-in;
+    -moz-transition: background-color 0.25s ease-in;
+    transition: background-color 0.25s ease-in;
+    background-color: black;
+}
+
+.btn-scroll-down:hover .arrow-down::after {
+    -webkit-transition: background-color 0.25s ease-in;
+    -moz-transition: background-color 0.25s ease-in;
+    transition: background-color 0.25s ease-in;
+    background-color: black;
+}
+
+.btn-scroll-down:focus {
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.5);
+}
+
+/* Header Absolute Images */
+header .abs-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+header .circle-shape-1 {
+    position: absolute;
+    top: 16vw;
+}
+
+header .circle-shape-2 {
+    position: absolute;
+    left: 28%;
+    top: 112px;
+    -webkit-animation: updown 2s infinite alternate;
+    animation: updown 2s infinite alternate;
+    -webkit-animation: updown 2s infinite alternate;
+    -moz-animation: updown 2s infinite alternate;
+}
+
+@keyframes updown {
+    0% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+
+    100% {
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+    }
+}
+
+header .dot-box {
+    position: absolute;
+    top: 205px;
+    left: 0;
+    z-index: 0;
+    transform: scaleY(1);
+    transition: transform 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+header .dot-box:hover {
+    transform: scaleY(0.9);
+    transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+header .dot-box-1 {
+    position: absolute;
+    top: 17.36vw;
+    right: 12.5vw;
+}
+
+.dot-triange {
+    position: absolute;
+    top: 600px;
+    left: 3vw;
+    animation: rotate-triangle 4s infinite;
+    -webkit-animation: rotate-triangle 4s infinite;
+    -moz-animation: rotate-triangle 4s infinite;
+}
+
+@keyframes rotate-triangle {
+    to {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+header .dot-flow {
+    position: absolute;
+    bottom: 6vh;
+    left: 22vw;
+    width: calc(250px + 14vw);
+    mix-blend-mode: screen;
+    transform: scaleY(1);
+    transition: transform 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+header .dot-flow:hover {
+    transform: scaleY(0.8);
+    transition: transform 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+/* UI images */
+.ui-image {
+    position: absolute;
+    top: 40vw;
+    right: -40vw;
+    width: 650px;
+    -webkit-transform: rotate(-20deg) scale(0.5);
+    -moz-transform: rotate(-20deg) scale(0.5);
+    transform: rotate(-20deg) scale(0.5);
+    z-index: 0;
+}
+
+.ux-ui {
+    -webkit-transition: transform 100ms ease-out;
+    -moz-transition: transform 100ms ease-out;
+    transition: transform 100ms ease-out;
+}
+
+@media (min-width:576px) {
+    header {
+        position: relative;
+        background-image: linear-gradient(90deg, #5B3DFF 17.5%, #D07FCF 100%);
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .ui-image {
+        position: absolute;
+        top: 40vw;
+        right: -20vw;
+        width: 650px;
+        -webkit-transform: rotate(-20deg);
+        -moz-transform: rotate(-20deg);
+        transform: rotate(-20deg);
+        z-index: 0;
+    }
+
+    .ux-ui {
+        -webkit-transition: transform 100ms ease-out;
+        -moz-transition: transform 100ms ease-out;
+        transition: transform 100ms ease-out;
+    }
+
+}
+
+@media (min-width:1200px) {
+    header {
+        position: relative;
+        background-image: linear-gradient(90deg, #5B3DFF 17.5%, #D07FCF 100%);
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    header .header-title {
+        color: #ffffff;
+        font-size: 44px;
+        font-weight: 700;
+        font-family: 'Playfair Display', serif;
+        line-height: 1.3;
+        margin-bottom: 60px;
+    }
+
+    header h3 {
+        color: white;
+        font-weight: 500;
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    header p {
+        opacity: .5;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 0px;
+        margin-top: 0;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+    header .ui-image {
+        top: 12vw;
+        right: -6vw;
+        -webkit-transform: rotate(-20deg) scale(1);
+        -moz-transform: rotate(-20deg) scale(1);
+        transform: rotate(-20deg) scale(1);
+    }
+}
+
+@media (min-width:1600px) {
+    header .dot-flow {
+        position: absolute;
+        bottom: 3vh;
+        left: 25vw;
+        width: 550px;
+    }
+
+    header .ui-image {
+        top: 16vw;
+        right: 0;
+        -webkit-transform: rotate(-20deg) scale(1.3);
+        -moz-transform: rotate(-20deg) scale(1.3);
+        transform: rotate(-20deg) scale(1.3);
+    }
+}
+
+
+
+
+
+/* Navbar */
+.slide-navbar {
+    /* Before Slide */
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 400px;
+    height: 100vh;
+    background: white;
+    z-index: 100;
+    transition: all 1s ease-in;
+}
+
+.slide-navbar .button-purchase-now-2 {
+    height: 60px;
+    background: white;
+    color: #0077ff;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 0px 40px;
+    line-height: 50px;
+    border-radius: 0px;
+    text-align: center;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    border: 0.5px solid #0077ff;
+    z-index: 20;
+}
+
+.slide-navbar .button-purchase-now-2:hover {
+    background: #0077ff;
+    color: white;
+}
+
+.sl-nav-link {
+    text-decoration: none;
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    color: rgb(129, 129, 129);
+}
+
+.sl-nav-link:hover {
+    background: rgb(231, 231, 231);
+}
+
+/* After Slider */
+.show-slide {
+    display: block !important;
+    transform: translateX(-400px);
+    transition: transform 1s ease-out;
+}
+
+.show-slide .logo_2 {
+    animation: tobottom 1.25s ease-out;
+}
+
+.show-slide .fa-times {
+    animation: tobottom 1.25s ease-out;
+}
+
+@keyframes tobottom {
+    from {
+        transform: translateY(-300px);
+    }
+}
+
+.show-slide h3 {
+    animation: toleft 1.25s ease-out;
+}
+
+.show-slide p {
+    animation: toleft 1.45s ease-out;
+}
+
+.show-slide .button-purchase-now-2 {
+    animation: zoomin 1.25s ease-in forwards;
+}
+
+@keyframes zoomin {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+.show-slide .sl-nav-link:nth-child(1) {
+    animation: toleft 1.25s ease-out;
+}
+
+.show-slide .sl-nav-link:nth-child(2) {
+    animation: toleft 1.35s ease-out;
+}
+
+.show-slide .sl-nav-link:nth-child(3) {
+    animation: toleft 1.45s ease-out;
+}
+
+@keyframes toleft {
+    from {
+        transform: translateX(400px);
+    }
+}

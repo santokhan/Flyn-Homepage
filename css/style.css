@@ -1,0 +1,15 @@
+@charset "UTF-8";
+@import url("style/footer.css");
+@import url("style/global.css");
+@import url("style/header.css");
+@import url("style/main.css");
+
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+
+*::selection {
+  background-color: #2c2c51;
+  color: white;
+}
